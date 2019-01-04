@@ -1,8 +1,8 @@
-
 # Importing IntentBuilder
 from adapt.intent import IntentBuilder
 # Importing MycroftSkill class
 from mycroft.skills.core import MycroftSkill
+from mycroft.skills.core import MycroftSkill, intent_handler
 
 # Creating HelloWorldSKill extending MycroftSkill
 class DogWalkingSkill(MycroftSkill):
