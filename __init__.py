@@ -18,6 +18,10 @@ class DogWalkingSkill(MycroftSkill):
         walk = IntentBuilder("WalkIntent").require("query").require("Walk1").build()
         self.register_intent(walk, self.handle_walk)
 
+    def initialize(self):
+        walk = IntentBuilder("WalkIntent").require("query").require("Walk1").build()
+        self.register_intent(walk, self.handle_walk)
+
         
         
     def handle_wweather(self):
