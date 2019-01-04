@@ -24,7 +24,7 @@ class DogWalkingSkill(MycroftSkill):
         self.speak_dialog("WWeather")
 
     
-    @intent_handler(IntentBuilder("WhenWalk").require("query").require("whenwalk").build())
+    @intent_handler(IntentBuilder("WhenWalk").require("whenwalk").build())
 
     def handle_when_walk(self):
         self.speak_dialog("When")
