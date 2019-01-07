@@ -28,13 +28,6 @@ class DogWalkingSkill(MycroftSkill):
 
     def handle_whenwalk(self):
         self.speak_dialog("When")
-
-
-    @intent_handler(IntentBuilder("WalkIntent").require("secondq").require("Walk").build())
-
-    def handle_walk(self):
-        self.speak_dialog("Walking")
-        
    
     def stop(self):
         pass
