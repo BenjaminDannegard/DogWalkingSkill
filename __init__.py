@@ -24,13 +24,13 @@ class DogWalkingSkill(MycroftSkill):
         self.speak_dialog("WWeather")
 
     
-    @intent_handler(IntentBuilder("WhenWalkIntent").require("whenwalk").build())
+    @intent_handler(IntentBuilder("WhenWalkIntent").require("firstq").require("whenwalk").build())
 
     def handle_whenwalk(self):
         self.speak_dialog("When")
 
 
-    @intent_handler(IntentBuilder("WalkIntent").require("Walk").build())
+    @intent_handler(IntentBuilder("WalkIntent").require("secondq").require("Walk").build())
 
     def handle_walk(self):
         self.speak_dialog("Walking")
